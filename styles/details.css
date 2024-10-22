@@ -1,4 +1,4 @@
-.choices {
+/* .choices {
     display: flex;
     justify-content: space-evenly;
 }
@@ -15,5 +15,58 @@
 .customOrders {
     padding: 1rem 2rem;
     font-size: 1.1rem;
+} */
+
+#choices {
+    display: flex;
+    justify-content: space-around;
+}
+
+.Entree {
+    width: 33%;   
+    background-color: tan;
+    display: flex-wrap;
+    justify-content: center;
+}
+
+.entreeTitle {
+    display: flex;
+    justify-content: center;
+}
+
+.entrees {
+    display: flex;
+    justify-content: center;
+}
+
+
+.Sides {
+    width: 33%;   
+    background-color: tan;
+}
+
+.sideTitle {
+    display: flex;
+    justify-content: center;
+}
+
+.sides {
+    display: flex;
+    justify-content: center;
+}
+
+.Vegetables {
+    width: 33%;
+    background-color: tan;
+}
+
+.veggieTitle {
+    display: flex;
+    justify-content: center;
+}
+
+.veggies {
+    display: flex;
+    justify-content: center;
 }
 

@@ -2,9 +2,12 @@ import { FoodTruck } from "./FoodTruck.js"
 
 const mainContainer = document.querySelector("#container")
 
-const renderAllHTML = () => {
+const render = () => {
     mainContainer.innerHTML = FoodTruck()
 }
 
-renderAllHTML()
+document.addEventListener("newOrderCreated", render)
+render()
+
+
 
