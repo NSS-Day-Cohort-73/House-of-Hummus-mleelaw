@@ -56,10 +56,19 @@ sequenceDiagram
 > 🧨 Before you click the "Assessment Complete" button on the Learning Platform, add your answers below for each question and make a commit. It is your option to request a face-to-face meeting with a coach for a vocabulary review.
 
 1. Should transient state be represented in a database diagram? Why, or why not?
-   > Your answer here
+
+   > I  do not believe transient state should be explicitly represented in an ERD. The data that at one point is transient state is defined within the erd as permanent state and will not be referred to transient state. 
+
+
 2. In the **FoodTruck** module, you are **await**ing the invocataion of all of the component functions _(e.g. sales, veggie options, etc.)_. Why must you use the `await` keyword there? Explain what happens if you remove it.
-   > Your answer here
+
+   > The "await" keyword ensures that the code runs in the right order. It tells the code to wait to run until the async function fetch has been completed. Without the keyword "await" a [promise Object] will be given instead of data since the fetch for data has not yet occurred.
+
 3. When the user is making choices by selecting radio buttons, explain how that data is retained so that the **Purchase Combo** button works correctly.
-   > Your answer here
+
+
+   > Each time a user clicks a radio button to choose a dish, that button is providing the id of the entree/side/veggie to transient state where it will be stored until the user presses purchase combo. The user can change their selection and the transient state will update as they do until the purchase button is clicked and the combo is ordered. 
+
 4. You used the `map()` array method in the self assessment _(at least, you should have since it is a learning objective)_. Explain why that function is helpful as a replacement for a `for..of` loop.
-   > Your answer here
+
+   > The map method is useful within the purchases() inside the sales.js module because it is automatically creating a new array of html strings. A for...of loop would need additional code to do this.
