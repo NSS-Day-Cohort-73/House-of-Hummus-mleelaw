@@ -1,10 +1,13 @@
-import { saveOrder } from "./transientState.js"
-
-
+import { saveOrder, transientState } from "./transientState.js"
 
 const handleOrderPlacedClick = (clickEvent) => {
     if (clickEvent.target.id === "purchase") {
+        if (!transientState.entreeId || !transientState.sideId || !transientState.vegetableId){
+            window.alert("select all items first!") 
+        } else { 
         saveOrder()
+    }
+
     }
 }
 

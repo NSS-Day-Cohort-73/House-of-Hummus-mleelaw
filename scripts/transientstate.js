@@ -1,10 +1,9 @@
 
 
-const transientState =  {
+export let transientState =  {
     "entreeId": 0,
     "vegetableId": 0,
     "sideId": 0,
-    "id": 0
 }
 // Functions to modify each property of transient state
 export const setEntree = (chosenEntree) => {
@@ -37,4 +36,12 @@ export const saveOrder = async ()  => {
 
     const customEvent = new CustomEvent("newOrderCreated")
     document.dispatchEvent(customEvent)
+
+    transientState = {
+        "entreeId": 0,
+        "vegetableId": 0,
+        "sideId": 0,
+    }
+    
+    console.log(transientState)
 }

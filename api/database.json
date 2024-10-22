@@ -132,115 +132,34 @@
   ],
   "purchases": [
     {
-      "entreeId": 3,
+      "entreeId": 7,
       "vegetableId": 4,
-      "sideId": 3,
+      "sideId": 4,
       "id": 1
     },
     {
+      "entreeId": 9,
+      "vegetableId": 5,
+      "sideId": 6,
       "id": 2
     },
     {
+      "entreeId": 2,
+      "vegetableId": 3,
+      "sideId": 3,
       "id": 3
     },
     {
       "entreeId": 8,
-      "vegetableId": 1,
-      "sideId": 1,
+      "vegetableId": 3,
+      "sideId": 2,
       "id": 4
     },
     {
+      "entreeId": 4,
+      "vegetableId": 4,
+      "sideId": 4,
       "id": 5
-    },
-    {
-      "entreeId": 8,
-      "vegetableId": 3,
-      "sideId": 1,
-      "id": 6
-    },
-    {
-      "entreeId": 3,
-      "vegetableId": 2,
-      "sideId": 4,
-      "id": 7
-    },
-    {
-      "entreeId": 7,
-      "vegetableId": 3,
-      "sideId": 1,
-      "id": 8
-    },
-    {
-      "entreeId": 7,
-      "vegetableId": 3,
-      "sideId": 1,
-      "id": 9
-    },
-    {
-      "entreeId": 4,
-      "vegetableId": 5,
-      "sideId": 1,
-      "id": 10
-    },
-    {
-      "entreeId": 4,
-      "vegetableId": 3,
-      "sideId": 1,
-      "id": 11
-    },
-    {
-      "entreeId": 9,
-      "vegetableId": 2,
-      "sideId": 3,
-      "id": 12
-    },
-    {
-      "entreeId": 12,
-      "vegetableId": 1,
-      "sideId": 4,
-      "id": 13
-    },
-    {
-      "entreeId": 10,
-      "vegetableId": 3,
-      "sideId": 4,
-      "id": 14
-    },
-    {
-      "entreeId": 1,
-      "vegetableId": 2,
-      "sideId": 2,
-      "id": 15
-    },
-    {
-      "entreeId": 4,
-      "vegetableId": 3,
-      "sideId": 1,
-      "id": 16
-    },
-    {
-      "entreeId": 12,
-      "vegetableId": 3,
-      "sideId": 1,
-      "id": 17
-    },
-    {
-      "entreeId": 1,
-      "vegetableId": 7,
-      "sideId": 3,
-      "id": 18
-    },
-    {
-      "entreeId": 12,
-      "vegetableId": 3,
-      "sideId": 5,
-      "id": 19
-    },
-    {
-      "entreeId": 1,
-      "vegetableId": 2,
-      "sideId": 4,
-      "id": 20
     }
   ]
 }

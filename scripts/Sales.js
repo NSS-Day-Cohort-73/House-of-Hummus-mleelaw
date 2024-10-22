@@ -1,12 +1,12 @@
 export const purchases = async () => {
-    const purchaseFetch = await fetch("http://localhost:8088/purchases")
-    const purchases = await purchaseFetch.json()
-    
+    const entreeFetch = await fetch("http://localhost:8088/purchases?_expand=entree&_expand=side&_expand=vegetable")
+    const purchases = await entreeFetch.json()
+
     let purchaseHTML = ""
     let purchaseArray = purchases.map(
         (purchase) => {
         return `
-            <section class="orderList">Receipt # ${purchase.id}</section>
+            <section class="orderList">Receipt # ${purchase.id} = $${purchase.entree.price + purchase.side.price + purchase.vegetable.price}</section>
         `
     })
     

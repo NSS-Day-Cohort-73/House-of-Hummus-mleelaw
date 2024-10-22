@@ -1,0 +1,15 @@
+vegtables {
+    id int [pk]
+}
+
+sides {
+    id int [pk]
+}
+
+entrees {
+    id int [pk]
+}
+
+orders {
+    id int [pk]
+}

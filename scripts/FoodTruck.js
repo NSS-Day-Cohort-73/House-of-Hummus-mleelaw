@@ -6,14 +6,14 @@ import { purchases } from "./Sales.js"
 
 
 
-const entreeHTML = await entreeOptions()
-const sideHTML = await sideOptions()
-const veggieHTML = await vegetableOptions()
-const buttonHTML = PlaceOrder()
-const purchaseHTML = await purchases()
+export const FoodTruck = async () => {
 
+    const entreeHTML = await entreeOptions()
+    const sideHTML = await sideOptions()
+    const veggieHTML = await vegetableOptions()
+    const buttonHTML = PlaceOrder()
+    const purchaseHTML = await purchases()
 
-export const FoodTruck = () => {
 
     return `
         <header class="header">

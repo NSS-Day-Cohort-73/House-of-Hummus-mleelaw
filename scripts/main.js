@@ -2,12 +2,12 @@ import { FoodTruck } from "./FoodTruck.js"
 
 const mainContainer = document.querySelector("#container")
 
-const render = () => {
-    mainContainer.innerHTML = FoodTruck()
+const render = async () => {
+    mainContainer.innerHTML = await FoodTruck()
 }
 
-document.addEventListener("newOrderCreated", render)
+document.addEventListener("newOrderCreated", render) 
+
+
 render()
-
-
 
