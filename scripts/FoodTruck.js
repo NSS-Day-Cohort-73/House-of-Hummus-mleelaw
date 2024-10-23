@@ -1,21 +1,17 @@
-import { entreeOptions } from "./Entrees.js"
-import { PlaceOrder } from "./purchaseButton.js"
-import { sideOptions } from "./SideDishes.js"
-import { vegetableOptions } from "./Vegetables.js"
-import { purchases } from "./Sales.js"
-
-
+import { entreeOptions } from "./Entrees.js";
+import { PlaceOrder } from "./purchaseButton.js";
+import { sideOptions } from "./SideDishes.js";
+import { vegetableOptions } from "./Vegetables.js";
+import { purchases } from "./Sales.js";
 
 export const FoodTruck = async () => {
+  const entreeHTML = await entreeOptions();
+  const sideHTML = await sideOptions();
+  const veggieHTML = await vegetableOptions();
+  const buttonHTML = PlaceOrder();
+  const purchaseHTML = await purchases();
 
-    const entreeHTML = await entreeOptions()
-    const sideHTML = await sideOptions()
-    const veggieHTML = await vegetableOptions()
-    const buttonHTML = PlaceOrder()
-    const purchaseHTML = await purchases()
-
-
-    return `
+  return `
         <header class="header">
             <img src="./images/hummus.png" class="logo" />
             <h1 class="title">Laura Kathryn's House of Hummus</h1>
@@ -53,6 +49,5 @@ export const FoodTruck = async () => {
             
         </article>
 
-    `
-}
-
+    `;
+};

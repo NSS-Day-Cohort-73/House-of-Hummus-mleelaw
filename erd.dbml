@@ -1,15 +1,26 @@
-vegtables {
+table vegtables {
     id int [pk]
+    price int
+    type varchar
 }
 
-sides {
+table sides {
     id int [pk]
+    price int
+    title varchar
 }
 
-entrees {
+table entrees {
     id int [pk]
+    price int
+    name varchar
 }
 
-orders {
+
+//should there be a total price key?
+table orders {
     id int [pk]
+    entreeid int [ref: > entrees.id]
+    sideid int  [ref: > sides.id]
+    veggieid int [ref: > vegtables.id]
 }
